@@ -46,6 +46,8 @@ public:
 
     void end() {
         std::cout << "Hope you liked the program\n";
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::cin.get();
     }
 
     void work() {
